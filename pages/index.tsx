@@ -1,10 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
+
 
 const Home: NextPage = () => {
   return (
-    <div className="dark:bg-slate-900 flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="bg-gradient-to-tr from-slate-100 via-white to-neutral-100 dark:bg-slate-900  flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
         <title>Emerson Day </title>
         <link rel="icon" href="/favicon.ico" />
@@ -27,37 +29,41 @@ const Home: NextPage = () => {
             href="/projects"
             className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-emerald-600 focus:text-emerald-600"
           >
-            <h3 className="text-2xl font-bold text-emerald-800 dark:text-emerald-200">Projects &rarr;</h3>
+            <h3 className="text-2xl font-bold text-emerald-700 dark:text-emerald-200">Projects &rarr;</h3>
             <p className="mt-4 text-xl">
               Find in-depth information about tools I use.
             </p>
           </a>
-
+          <Link href='/edu'>
+            <a
+              href=""
+              className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
+            >
+              <h3 className="text-2xl font-bold text-blue-700 dark:text-blue-200">Education &rarr;</h3>
+              <p className="mt-4 text-xl ">
+                Schools I have attended, and courses I have completed. 
+              </p>
+            </a>
+          </Link>
+          
+          <Link href="/photos">
           <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
+            href=""
+            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-amber-500 focus:text-amber-500"
           >
-            <h3 className="text-2xl font-bold text-blue-800 dark:text-blue-200">Education &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Schools I have attended, and courses I have completed. 
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-amber-600 focus:text-amber-600"
-          >
-            <h3 className="text-2xl font-bold text-amber-800 dark:text-amber-200">Photo Galleries &rarr;</h3>
+            <h3 className="text-2xl font-bold text-amber-500 dark:text-amber-200">Photo Galleries &rarr;</h3>
             <p className="mt-4 text-xl">
               Discover different styles of photo galleries I have designed.
             </p>
           </a>
 
+        </Link>
+          
           <a
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-rose-600 focus:text-rose-600"
           >
-            <h3 className="text-2xl font-bold text-rose-800 dark:text-rose-200">Fun &rarr;</h3>
+            <h3 className="text-2xl font-bold text-rose-700 dark:text-rose-200">Fun &rarr;</h3>
             <p className="mt-4 text-xl">
               Having fun with APIs.
             </p>
