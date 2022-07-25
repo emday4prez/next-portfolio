@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-
+import EduDash from '../components/EduDash'
 const Edu: NextPage = () => {
 
  return (
@@ -11,7 +11,7 @@ const Edu: NextPage = () => {
         <link rel="icon" href="/faviconedu.ico" />
       </Head>
       <main>
-       edu
+       e
       </main>
   </div>
  )

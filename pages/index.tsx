@@ -2,7 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
 
 const Home: NextPage = () => {
   return (
@@ -11,19 +12,24 @@ const Home: NextPage = () => {
         <title>Emerson Day </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
 
-      <main className="flex  dark:text-gray-100  white w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold text-slate-800 dark:text-slate-200">
+      <main className="flex  dark:text-gray-100  white w-full flex-1 flex-col items-center justify-center text-center">
+        <div className='grid grid-cols-1 md:grid-cols-2'>
+          <h1 className=" lg:text-7xl md:text-6xl sm:text-5xl text-4xl font-bold md:pt-0 pt-4 text-slate-800 dark:text-slate-200 col-span-1 ">
           Emerson Day
          
         </h1>
 
         <p className="mt-6 text-2xl">
-          <code className="rounded-md bg-gray-200 dark:bg-gray-700 dark:text-emerald-400 p-3 font-mono text-xl">
+          <code className="rounded-md bg-gray-200 dark:bg-gray-700  dark:text-emerald-400 p-3 font-mono text-xs lg:text-md xl:text-lg">
             full stack developer
           </code>
         </p>
-
+        </div>
+        
+        <Navbar/>
+        <Hero/>
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
           <a
             href="/projects"
