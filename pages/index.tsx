@@ -7,7 +7,7 @@ import Hero from '../components/Hero'
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-gradient-to-tr from-slate-100 via-white to-neutral-100 dark:bg-slate-900  flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="dark:bg-slate-900  flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
         <title>Emerson Day </title>
         <link rel="icon" href="/favicon.ico" />

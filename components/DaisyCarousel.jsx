@@ -8,7 +8,7 @@ import nightDome from '../public/images/night-dome.jpg'
 import valley from '../public/images/valley.jpg'
 function DaisyCarousel() {
     return (
-        <div className="flex items-center justify-center ">
+        <div className=" dark:bg-slate-900 ">
             {/* <div className="carousel carousel-center  max-w-lg p-4 space-x-5 bg-neutral rounded-box">
                 <div className="carousel-item">
                     <Image
@@ -62,7 +62,7 @@ function DaisyCarousel() {
                     />
                 </div>
             </div> */}
-            <div className="carousel w-11/12 pt-4">
+            <div className="carousel mx-auto max-w-md pt-4">
                 <div id="slide1" className="carousel-item relative w-full">
                     <Image src={valley} className="rounded-box w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
