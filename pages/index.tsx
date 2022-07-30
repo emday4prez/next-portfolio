@@ -7,22 +7,22 @@ import Hero from '../components/Hero'
 
 const Home: NextPage = () => {
   return (
-    <div className="dark:bg-slate-900  flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="dark:bg-slate-800  flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
         <title>Emerson Day </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
 
-      <main className="flex  dark:text-gray-100  white w-full flex-1 flex-col items-center justify-center text-center">
-        <div className='grid grid-cols-1 md:grid-cols-2'>
-          <h1 className=" lg:text-7xl md:text-6xl sm:text-5xl text-4xl font-bold md:pt-0 pt-4 text-slate-800 dark:text-slate-200 col-span-1 ">
+      <main className="flex  dark:text-gray-100 py-4  w-full mb-8 flex-1 flex-col items-center justify-center text-center">
+        <div className='grid grid-cols-1  md:grid-cols-2'>
+          <h1 className=" lg:text-7xl md:text-6xl sm:text-5xl text-4xl text-left font-bold md:pt-0 pt-4 text-slate-800 dark:text-slate-200 col-span-1 ">
           Emerson Day
          
         </h1>
 
         <p className="mt-6 text-2xl">
-          <code className="rounded-md bg-gray-200 dark:bg-gray-700  dark:text-emerald-400 p-3 font-mono text-xs lg:text-md xl:text-lg">
+          <code className="rounded-md bg-gray-200 dark:bg-gray-900  dark:text-emerald-400 p-3 font-mono text-xs lg:text-md xl:text-lg">
             full stack developer
           </code>
         </p>

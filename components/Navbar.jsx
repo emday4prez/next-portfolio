@@ -1,12 +1,14 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-
+import Link from 'next/link'
 const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Team', href: '#', current: false },
-    { name: 'Projects', href: '#', current: false },
-    { name: 'Calendar', href: '#', current: false },
+    { name: 'About', href: '#', current: true },
+    { name: 'Education', href: '/edu', current: false },
+    
+    { name: 'Projects', href: '/projects', current: false },
+    { name: 'Tools', href: '/tools', current: false },
+    { name: 'Contact', href: 'contact', current: false },
 ]
 
 function classNames(...classes) {
@@ -15,11 +17,10 @@ function classNames(...classes) {
 
 export default function Navbar() {
     return (
-        <Disclosure as="nav" className="bg-slate-900  w-full mt-6">
+        <Disclosure as="nav" className="bg-slate-800  w-full mt-6">
             {({ open }) => (
                 <>
-                
-                    <div className="max-w-7xl  mx-auto px-2 sm:px-6 lg:px-8">
+                    <div className="max-w-6xl  mx-auto px-2 sm:px-6 lg:px-8">
                         <div className="relative flex items-center justify-between h-16">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                 {/* Mobile menu button*/}
@@ -41,18 +42,6 @@ export default function Navbar() {
                                 </Disclosure.Button>
                             </div>
                             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                                <div className="flex-shrink-0 flex items-center">
-                                    <img
-                                        className="block lg:hidden h-8 w-auto"
-                                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                                        alt="Workflow"
-                                    />
-                                    <img
-                                        className="hidden lg:block h-8 w-auto"
-                                        src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                                        alt="Workflow"
-                                    />
-                                </div>
                                 <div className="hidden sm:block sm:ml-6">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
@@ -85,25 +74,39 @@ export default function Navbar() {
                                     <span className="sr-only">
                                         View notifications
                                     </span>
-                                    <BellIcon
-                                        className="h-6 w-6"
-                                        aria-hidden="true"
-                                    />
+                                    <Link href="/">
+                                        <div className="flex-shrink-0 flex items-center hover:cursor-pointer">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                className="h-6 w-6"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke="currentColor"
+                                                strokeWidth={2}
+                                            >
+                                                <path
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </Link>
                                 </button>
 
                                 {/* Profile dropdown */}
-                                <Menu as="div" className="ml-3 relative">
+                                {/* <Menu as="div" className="ml-3 relative">
                                     <div>
                                         <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                                             <span className="sr-only">
                                                 Open user menu
                                             </span>
-                                            <img
+                                            {/* <img
                                                 className="h-8 w-8 rounded-full"
                                                 src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                                                 alt=""
-                                            />
-                                        </Menu.Button>
+                                            /> 
+                                       </Menu.Button>
                                     </div>
                                     <Transition
                                         as={Fragment}
@@ -162,7 +165,7 @@ export default function Navbar() {
                                             </Menu.Item>
                                         </Menu.Items>
                                     </Transition>
-                                </Menu>
+                                </Menu> */}
                             </div>
                         </div>
                     </div>
