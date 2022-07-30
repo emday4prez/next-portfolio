@@ -2,10 +2,11 @@ import { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import Navbar from '../components/Navbar' 
+import nebula from '../public/images/webb.jpg'
 
 const Contact: NextPage = () => {
   return (
-    <div className='max-w-screen h-screen dark:bg-slate-800 flex flex-col justify-start items-center'>
+    <div className="max-w-screen h-screen dark:bg-slate-800 flex flex-col justify-start items-center bg-[url('../public/images/webb.jpg')]">
       <Head>
         <title>Emerson Day | Contact</title>
         <link rel="icon" href="/favicon.ico" />
@@ -15,11 +16,11 @@ const Contact: NextPage = () => {
          
         </h1>
       <Navbar/>
-       <div className='px-8 h-10'>
+       <div className="px-8 h-10 ">
           
         </div>
-      <div>
-       <div className='p-4' >
+      <div className="backdrop-blur rounded border-double border-8 border-grey-200  p-4">
+       <div className=" p-4">
         
        <h1 className=" lg:text-4xl md:text-3xl sm:text-xl text-2xl text-left font-bold  text-slate-800 dark:text-slate-200 col-span-1 ">
           310-490-6576

@@ -5,7 +5,7 @@ import Link from 'next/link'
 const navigation = [
     { name: 'About', href: '#', current: true },
     { name: 'Education', href: '/edu', current: false },
-    
+
     { name: 'Projects', href: '/projects', current: false },
     { name: 'Tools', href: '/tools', current: false },
     { name: 'Contact', href: 'contact', current: false },
@@ -17,7 +17,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
     return (
-        <Disclosure as="nav" className="bg-slate-800  w-full mt-6">
+        <Disclosure as="nav" className="bg-transparent  w-full mt-6">
             {({ open }) => (
                 <>
                     <div className="max-w-6xl  mx-auto px-2 sm:px-6 lg:px-8">
