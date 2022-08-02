@@ -27,10 +27,7 @@ export default function Hero() {
                 <div>
                     <h1 className="text-5xl font-bold">Box Office News!</h1>
                     <p className="py-6">
-                        I am a full stack developer open to relocation or remote
-                        work. I have experience building full stack web
-                        applications with modern javascript bundling.
-                        Asynchronous
+                        I am a full stack developer open to remote work or relocation for in office work.  I have two years of experience building full stack web applications with React, Node.js, and CSS.
                     </p>
                     <button className="btn btn-primary">Get Started</button>
                 </div>
