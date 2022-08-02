@@ -14,7 +14,7 @@ const Projects: NextPage = () => {
       <main className='dark:bg-slate-900 self-center dark:text-slate-100'>
        <h2 className='text-5xl mb-6'>projects</h2>
        <Link className="cursor-pointer" href="/projects/landing-pages">
-        <h3 className="text-slate800 dark:text-slate-300">Landing Pages</h3>
+        <a className="text-slate800 dark:text-slate-300 cursor-pointer">Landing Pages</a>
        </Link>
        
        
