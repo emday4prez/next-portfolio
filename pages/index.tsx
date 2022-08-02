@@ -37,7 +37,7 @@ const Home: NextPage = () => {
           >
             <h3 className="text-2xl font-bold text-emerald-700 dark:text-emerald-200">Projects &rarr;</h3>
             <p className="mt-4 text-xl">
-              Find in-depth information about tools I use.
+              Check out what I've been working on.
             </p>
           </a>
           <Link href='/edu'>
